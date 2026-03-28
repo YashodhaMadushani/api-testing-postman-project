@@ -1,0 +1,165 @@
+{
+	"id": "9b3bd849-bc39-4a5c-a9c7-bc8f6d695f80",
+	"name": "ReqRes API Testing Project",
+	"timestamp": "2026-03-28T07:30:13.457Z",
+	"collection_id": "52583170-111fa6c4-38ad-44b1-827e-7e74a93d0d63",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 4,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2026-03-28T07:30:09.949Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "4c171e0d-b6be-496c-bd44-8734810c2e2a",
+			"name": "Get Users List",
+			"url": "https://reqres.in/api/users?page=2",
+			"time": 776,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Response has data": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has data": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				776
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Response has data": true
+				}
+			]
+		},
+		{
+			"id": "4f1aa138-5e58-4678-a98c-51081b7dfc5c",
+			"name": "Create User",
+			"url": "https://reqres.in/api/users",
+			"time": 377,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code is 201": true
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				377
+			],
+			"allTests": [
+				{
+					"Status code is 201": true
+				}
+			]
+		},
+		{
+			"id": "c154ad2b-6c65-4b4d-b51e-158e32194ad0",
+			"name": "New Request",
+			"url": "https://reqres.in/api/users/2",
+			"time": 358,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				358
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "9581d8f6-c02b-48c9-97d9-d6791019fe6c",
+			"name": "New Request",
+			"url": "https://reqres.in/api/users/2",
+			"time": 349,
+			"responseCode": {
+				"code": 204,
+				"name": "No Content"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				349
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "58586f1c-0e08-4c90-a340-d071cef1f339",
+			"name": "Get Invalid User",
+			"url": "https://reqres.in/api/users/999",
+			"time": 653,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Status code is 404": true
+			},
+			"testPassFailCounts": {
+				"Status code is 404": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				653
+			],
+			"allTests": [
+				{
+					"Status code is 404": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 2513,
+	"collection": {
+		"requests": [
+			{
+				"id": "4c171e0d-b6be-496c-bd44-8734810c2e2a",
+				"method": "GET"
+			},
+			{
+				"id": "4f1aa138-5e58-4678-a98c-51081b7dfc5c",
+				"method": "POST"
+			},
+			{
+				"id": "c154ad2b-6c65-4b4d-b51e-158e32194ad0",
+				"method": "PUT"
+			},
+			{
+				"id": "9581d8f6-c02b-48c9-97d9-d6791019fe6c",
+				"method": "DELETE"
+			},
+			{
+				"id": "58586f1c-0e08-4c90-a340-d071cef1f339",
+				"method": "GET"
+			}
+		]
+	}
+}
